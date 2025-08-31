@@ -7,7 +7,7 @@ import RoleSelect from "./pages/RoleSelect";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import ManagerReport from "./pages/ManagerReport";
-import MyTasks from "./pages/MyTasks";
+
 
 const PrivateRoute = ({ children }) => {
   const { user } = useContext(AppContext);
@@ -27,7 +27,7 @@ function App() {
         <Route element={<PrivateRoute />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/reports" element={<ManagerReport />} />
-          <Route path="/my-tasks" element={<MyTasks />} />
+         
         </Route>
       </Routes>
     </Router>
